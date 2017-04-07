@@ -1,0 +1,11 @@
+README!!!
+==========
+
+Source: http://www.terminally-incoherent.com/blog/2012/03/12/putting-your-vim-files-under-version-control/
+
+```
+cd ~
+git clone gh:davethecipo/nvim.git
+cd ~/.config/nvim
+git submodule update --init --recursive
+```
