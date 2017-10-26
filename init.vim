@@ -1,4 +1,14 @@
-execute pathogen#infect()
+set nocompatible
+filetype off
+set rtp+=~/.config/nvim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-fugitive'
+Bundle 'Valloric/YouCompleteMe'
 
 " non usare file swap
 set noswapfile
