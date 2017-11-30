@@ -1,7 +1,7 @@
 set nocompatible
 filetype off
 set rtp+=~/.config/nvim/bundle/vundle/
-call vundle#rc()
+call vundle#begin('~/.config/nvim/bundle')
 
 " let Vundle manage Vundle
 " required! 
@@ -9,17 +9,25 @@ Bundle 'gmarik/vundle'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'vim-airline/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'iCyMind/NeoSolarized'
+
+call vundle#end()
 
 " non usare file swap
 set noswapfile
 
-" Tema grafico
-set background=light
-colorscheme solarized
+" serve al tema neovim-solarized
+"set termguicolors
 
+" tema
+colorscheme NeoSolarized
+
+let g:neosolarized_contrast="high"
+let g:neosolarized_visibility="high"
+
+set background=dark
 
 " terminale con 256 colori
 set t_Co=256
