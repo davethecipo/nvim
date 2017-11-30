@@ -99,7 +99,7 @@ endfunction
 vnoremap <C-a> :call Incr()<CR>
 
 " opzioni di default per compilare codice C++
-let g:ycm_global_ycm_extra_conf = "~/.config/nvim/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "~/.config/nvim/ycm_conf.py"
 
 " permetti il source dalla current working directory, con l'opzione di
 " sicurezza per disabilitare cose cattive
